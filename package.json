@@ -6,8 +6,14 @@
     "url": "git+ssh://git@github.com/particle4dev/global-configuration.git"
   },
   "author": "Hoang Nam <particle4dev@gmail.com> (http://www.particle4dev.com)",
+  "description": "My personal collection of config settings",
+  "bugs": {
+    "url": "https://github.com/particle4dev/global-configuration/issues"
+  },
+  "homepage": "https://github.com/particle4dev/global-configuration#readme",
   "scripts": {
-    "deploy": "npm publish -access public"
+    "lint": "eslint . --ext .json",
+    "lint:fix": "eslint . --fix --ext.json"
   },
   "publishConfig": {
     "access": "public"
@@ -19,10 +25,5 @@
     "eslint": "^7.9.0",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2"
-  },
-  "description": "My personal collection of config settings",
-  "bugs": {
-    "url": "https://github.com/particle4dev/global-configuration/issues"
-  },
-  "homepage": "https://github.com/particle4dev/global-configuration#readme"
+  }
 }
