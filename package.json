@@ -12,7 +12,6 @@
   },
   "homepage": "https://github.com/particle4dev/global-configuration#readme",
   "scripts": {
-    "prepare": "npm run lint",
     "lint": "eslint . --ext .json,.js",
     "lint:fix": "eslint . --fix --ext .json,.js"
   },
