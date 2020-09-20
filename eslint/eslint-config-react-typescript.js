@@ -1,7 +1,24 @@
 module.exports = {
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
   },
   "rules": {
     "array-callback-return": "warn",
@@ -110,7 +127,6 @@ module.exports = {
     ],
     "no-with": "warn",
     "no-whitespace-before-property": "warn",
-    "react-hooks/exhaustive-deps": "warn",
     "require-yield": "warn",
     "rest-spread-spacing": ["warn", "never"],
     "strict": ["warn", "never"],

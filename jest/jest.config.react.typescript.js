@@ -1,17 +1,12 @@
 module.exports = {
   transform: {
-    '.(ts|tsx)': 'ts-jest'
+    '.(ts|tsx|json)': 'ts-jest'
   },
   globals: {
     'ts-jest': {
       tsConfig: 'tsconfig.json'
     }
   },
-  moduleFileExtensions: [
-    'ts',
-    'tsx',
-    'js'
-  ],
   coveragePathIgnorePatterns: [
     '/node_modules/',
     'next-env.d.ts'

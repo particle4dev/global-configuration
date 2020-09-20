@@ -190,6 +190,10 @@ module.exports = {
     'js'
   ],
 
+  testMatch: [
+    '**/?(*.)+(spec|test).js'
+  ],
+
   coverageReporters: [
     'json',
     'lcov',
