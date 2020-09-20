@@ -26,5 +26,13 @@ module.exports = {
       "error",
       "never"
     ],
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.json"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ]
 }
