@@ -3,14 +3,14 @@
   "version": "1.1.0",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/particle4dev/@penguin-ui/global-configuration.git"
+    "url": "git+ssh://git@github.com/particle4dev/global-configuration.git"
   },
   "author": "Hoang Nam <particle4dev@gmail.com> (http://www.particle4dev.com)",
   "description": "My personal collection of config settings",
   "bugs": {
-    "url": "https://github.com/particle4dev/@penguin-ui/global-configuration/issues"
+    "url": "https://github.com/particle4dev/global-configuration/issues"
   },
-  "homepage": "https://github.com/particle4dev/@penguin-ui/global-configuration#readme",
+  "homepage": "https://github.com/particle4dev/global-configuration#readme",
   "scripts": {
     "prepare": "npm run lint",
     "lint": "eslint . --ext .json,.js",
