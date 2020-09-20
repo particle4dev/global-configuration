@@ -13,7 +13,7 @@ git:
   depth: 1
 
 script:
-- echo "skip for now"
+- yarn lint
 
 notifications:
   email:
