@@ -12,8 +12,8 @@
   },
   "homepage": "https://github.com/particle4dev/global-configuration#readme",
   "scripts": {
-    "lint": "eslint . --ext .json",
-    "lint:fix": "eslint . --fix --ext.json"
+    "lint": "eslint . --ext .json,.js",
+    "lint:fix": "eslint . --fix --ext .json,.js"
   },
   "publishConfig": {
     "access": "public"
