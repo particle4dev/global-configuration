@@ -6,15 +6,10 @@ dist: trusty
 language: node_js
 
 node_js:
-  - '14'
-  - '14.0'
-  - '13'
-  - '12'
-  - '12.0'
-  - '10'
-  - '10.0'
-  - '8'
-  - '8.6'
+  - 14
+
+cache:
+  - yarn
 
 git:
   depth: 1
@@ -27,9 +22,17 @@ after_success:
   - 'echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null'
   - npm publish
 
+notifications:
+  email:
+    recipients:
+    - particle4dev@gmail.com
+    on_success: never
+    on_failure: always
+
 deploy:
   provider: npm
   email: particle4dev@gmail.com
+  edge: true
   api_key:
     secure: dx2mhSCqOQPPFXSVUhBEMG6FUgTsEUHM3ml4M/zyE/5R8gr7DGa7LoOY47y2goSE5fY1fE+S+ZCJJb3A8FsMHzNo9G7R3TWchJnIDxnuQaC6sCFP20ZIjBXFWAq0Q3ymUX0i/qH2v2IRtwbH/gBhR2WWZ9lOZ3FiwruoD0sK3ONbDg4N4/pzv3p29RPHM31pQkATGw5qng7RSQosZ16WilxXmzJ2GCc03sPZ9XDwJuHAwU1xnGSwc06gixcRQI23aWxrQJ9yKTqcmwh6L1GdM8kXv4VdITKv3RgfufM3q+a4xI/XkOQwkQy40wXG1Nx/nfAviwkVpuVDPWZTJsrt2bvdE53KUbkGhYPJI3+AmApPVYOs6aN1zotzPZ0SYHdLO9b1w7DLeSbqFxABk+epxyQ5/QAyV9GXUNg9u0cdyNzQ+wZHa8hRrYWYz78otSCWLoLdN6UVrMqbv3f5E5/Bs2lrvfxDSa+luHXGIUhc7v3aIOwkAFvags9jEega7p4NOjfB5JruvyTY3UTb1tP5cQXRBSD+fxlK6cc6ChXDIpjDyCjfeS0do2oPUgzdr3sYQM2eTxX0jn5Ip3Mu2lOke6W4PXwkFGVN30tBa6jq/y7au2NrsEYys2HVv/MHE8IZ/6xOghW5PhpbTNlqbtS8fIiAwr6K4BSbZv8BKxqyE6g=
   on:
